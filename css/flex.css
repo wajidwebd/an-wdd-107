@@ -1,0 +1,166 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.mainflex{
+    background-color: black;
+    /* display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* gap: 10px;
+    flex-direction: row; */
+    /* justify-content: left; */
+}
+/* .flexone{
+    order: 2;
+}
+.flextwo{
+    order: 3;
+}
+.flexthree{
+    order: 1;
+} */
+
+/* Animation -> there are two types of animation -> 1. fromto 2.diagonal */
+
+.flexone{
+    background-color: orange;
+    width: 25%;
+    height: 200px;
+    position: relative;
+    animation-name: flexboxone;
+    animation-duration: 5s;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    
+    /* flex-grow: 1; */
+}
+
+/* @keyframes flexboxone {
+    from{
+        position: relative;
+        top: 20px;
+    }
+    to{
+        position: relative;
+        top: 500px;
+    }
+    
+} */
+
+/* @keyframes flexboxone {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 500px;
+    }
+    50%{
+        top: 500px;
+        left: 500px;
+
+    }
+    75%{
+        top: 500px;
+        left: 0px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }    
+} */
+
+/* Color therory -> name, hex, & rgba */
+/* hex -> 0 - f -> 0,1,2,3,4,5,6,7,8,9,10-a,11-b,12-c,13-d,14-e,15-f*/
+/* rbg ->0,255 -> 256 */
+.flextwo{
+    /* background-color: #ffffff; */
+    /* background-color: rgba(255, 0, 0,1); */
+    /* background: linear-gradient(to bottom,red,blue); */
+    width: 25%;
+    height: 200px;
+    /* position: relative;
+    top: 100px; */
+    /* position: absolute;
+    top: 0; */
+    /* position: fixed;
+    top: 100px; */
+    /* position: sticky;
+    top: 10px; */
+    position: static;
+    top: 100px;
+    /* left: 500px; */
+    /* margin-top: 100px; */
+
+    /* flex-grow: 1; */
+
+}
+.flexthree{
+    background-color: blue;
+    width: 25%;
+    height: 200px;
+    /* flex-grow: 1; */
+
+}
+.flexfour{
+    background-color: green;
+    width: 25%;
+    height: 200px;
+    /* flex-grow: 1; */
+
+}
+.flexfive{
+    background-color: purple;
+    width: 25%;
+    height: 200px;
+    /* flex-grow: 3; */
+}
+.flexsix{
+    background-color: yellow;
+    width: 25%;
+    height: 200px;
+    /* flex-grow: 1; */
+}
+
+/* Psudo element -> */
+
+/* .first::first-line{
+    color: red;
+    font-size: 50px;
+} */
+
+/* .first::first-letter{
+    color: red;
+    font-size: 50px;
+} */
+
+.first::after{
+    content: '\261B';
+}
+
+.first::before{
+    content: '\265E';
+    font-size: 25px;
+    color: orange;
+}
+
+.first:hover::after{
+    content: '\261B';
+}
+
+.first:hover::before{
+    content: '\265E';
+    font-size: 25px;
+    color: orange;
+}
+
+.oltag li::marker{
+    content: '\265E';
+}

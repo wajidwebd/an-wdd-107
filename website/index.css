@@ -100,3 +100,20 @@
         flex-wrap: wrap;
     padding-top: 20px;
 }
+
+
+@media screen and (max-width:500px) {
+
+    /*1. Display:flex; flex-wrap:wrap;display: block; */
+    /* 2. width:100%; */
+    /* 3. margin & padding:0px; */
+    /* 4. font size :16px; */
+    .ulmain,.headermain,.mainherosection{
+        display: block;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:1100px){
+
+}

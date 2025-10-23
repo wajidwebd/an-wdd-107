@@ -298,7 +298,7 @@
 // console.log(mynumbers);
 
 
-const myname = 'rohith';
+// const myname = 'rohith';
 // console.log(myname.length);
 // console.log(myname[0]);
 // console.log(myname.charAt(5));
@@ -316,11 +316,38 @@ const myname = 'rohith';
 // console.log(myname.slice(1,2));
 // console.log(myname.split(''));
 
-console.log(myname);
+// DOM -> Document Object Modeling or Manipulation.
+
+// let firstptag = document.getElementById("thirdone");
+// let firstptag = document.querySelector("#thirdone");
+// firstptag.innerHTML += "firstone - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum dolore provident porro corporis sit in deserunt, voluptates fugiat, sunt pariatur sequi totam libero? Natus facere enim ut quae voluptatum?"
+// console.log(firstptag.innerHTML);
+
+// let ptagcall = document.getElementsByTagName("p")[0];
+// let ptagcall = document.querySelectorAll("#firstone")[1];
+// let ptagcall = document.getElementsByClassName("thirdone")[1];
+// ptagcall.innerHTML = ptagcall.innerHTML +  'firstone - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum dolore provident porro corporis sit in deserunt, voluptates fugiat, sunt pariatur sequi totam libero? Natus facere enim ut quae voluptatum?'
 
 
+// let myname = prompt("enter ur name");
+// let ptagcall = document.getElementById("namepass");
+// ptagcall.innerHTML += myname;
 
+// for (let index = 0; index < myname.length; index++) {
+//     const element = myname[index];
+//     console.log(element);
+//     let ptagcall = document.getElementById("namepass");
+//     ptagcall.innerHTML += element;
+// }
 
+let formtag = document.getElementById("formtag");
+let myname = document.getElementById("myname");
+let myage = document.getElementById("myage")
+let displaydiv = document.getElementById("displaydiv");
 
-
-
+// formtag.addEventListener("submit",function submitfunction(e) {
+//     e.preventDefault();
+//     console.log(myname.value);
+//     const merge = myname.value + myage.value
+//     displaydiv.innerHTML += merge;  
+// })

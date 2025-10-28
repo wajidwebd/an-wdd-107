@@ -2,7 +2,7 @@ let formtagcall = document.getElementById("formtag");
 let mynamecall = document.getElementById("myname");
 let myagecall = document.getElementById("myage")
 let displaydivcall = document.getElementById("displaydiv");
-
+let countryvalue = document.getElementById("countryvalue")
 
 formtagcall.addEventListener("submit",function submitfunction(e) {
     e.preventDefault();
@@ -22,6 +22,18 @@ formtagcall.addEventListener("submit",function submitfunction(e) {
     newdivcreate.appendChild(myageinputtag);
 
 
+    let selecttag = document.createElement("select");
+    if (countryvalue.value == "darani") {
+        selecttag.innerHTML = ` <option value="darani">India</option>
+            <option value="China">China</option>`
+        
+    } else {
+        selecttag.innerHTML = ` 
+            <option value="China">China</option>
+            <option value="darani">India</option>
+            `
+    }
+    newdivcreate.appendChild(selecttag)
 
     let editbuttoncreate = document.createElement("button");
     editbuttoncreate.innerHTML = "Edit";

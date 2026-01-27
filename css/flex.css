@@ -164,3 +164,9 @@
 .oltag li::marker{
     content: '\265E';
 }
+
+.redcolor{
+    background-color: orange;
+    padding: 20px;
+    color: red;
+}

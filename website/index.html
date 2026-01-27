@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -15,10 +16,10 @@
                 </div>
                 <div class="headertwo">
                     <ul class="ulmain">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home" id="home">Home</a></li>
+                        <li><a href="#about" id="about">About</a></li>
+                        <li><a href="#menu" id="menu">Menu</a></li>
+                        <li><a href="#contact" id="contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -35,7 +36,7 @@
 
     </nav>
     <main>
-        <section>
+        <section id="home">
             <div class="container">
                 <div class="mainherosection">
                     <div class="herosectionone">
@@ -51,11 +52,12 @@
             </div>           
         </section>
 
-        <section class="gray">
+        <section class="gray" id="about">
             <div class="container">
-                <h2 class="specialcoeffe">OUR SPECIAL COFFEE</h2>
+                <h2 class="specialcoeffe">About</h2>
                 <div class="coffeemain">
-                    <div class="cardone">
+                    <div data-aos="zoom-in-left">
+<div class="cardone" >
                         <img src="./images/imag1.png" alt="">
                         <h5 class="filtercoeffe">Filter Coffee</h5>
                         <p class="ourcoeffe">Our Filter coffee gives feel good taste</p>
@@ -71,7 +73,9 @@
                         </div>
 
                     </div>
-                    <div class="cardtwo">
+                    </div>
+                    
+                    <div class="cardtwo" data-aos="fade-up">
                         <img src="./images/imag1.png" alt="">
                         <h5 class="filtercoeffe">Filter Coffee</h5>
                         <p class="ourcoeffe">Our Filter coffee gives feel good taste</p>
@@ -87,7 +91,7 @@
                         </div>
 
                     </div>
-                    <div class="cardthree">
+                    <div class="cardthree" data-aos="flip-left">
                         <img src="./images/imag1.png" alt="">
                         <h5 class="filtercoeffe">Filter Coffee</h5>
                         <p class="ourcoeffe">Our Filter coffee gives feel good taste</p>
@@ -103,10 +107,94 @@
                 </div>
             </div>
         </section>
+          <section class="gray" id="contact">
+            <div class="container">
+                <h2 class="specialcoeffe">OUR SPECIAL COFFEE</h2>
+                <div class="coffeemain">
+                    <div data-aos="zoom-in-left">
+<div class="cardone" >
+                        <img src="./images/imag1.png" alt="">
+                        <h5 class="filtercoeffe">Filter Coffee</h5>
+                        <p class="ourcoeffe">Our Filter coffee gives feel good taste</p>
+
+                        <div class="pricemain">
+                            <div class="priceone">
+                                <h5 class="filtercoeffe">RS . 39</h5>
+                            </div>
+                            <div class="pricetwo">
+                                <button class="signup">Order Now</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    </div>
+                    
+                    <div class="cardtwo" data-aos="fade-up">
+                        <img src="./images/imag1.png" alt="">
+                        <h5 class="filtercoeffe">Filter Coffee</h5>
+                        <p class="ourcoeffe">Our Filter coffee gives feel good taste</p>
+
+                        <div class="pricemain">
+                            <div class="priceone">
+                                <h5 class="filtercoeffe">RS . 39</h5>
+                            </div>
+                            <div class="pricetwo">
+                                <button class="signup">Order Now &#10092;</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                 
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+
+  let home = document.getElementById("home");
+  let about = document.getElementById("about");
+  let menu = document.getElementById("menu");
+  let contact = document.getElementById("contact");
+  home.style.color = "red";
+
+  home.addEventListener("click",()=>{
+    home.style.color = "red";
+    about.style.color = "black";
+    menu.style.color = "black";
+    contact.style.color = "black";
+
+  })
+    about.addEventListener("click",()=>{
+    about.style.color = "red";
+    home.style.color = "black";
+    menu.style.color = "black";
+    contact.style.color = "black";
+
+  })
+    menu.addEventListener("click",()=>{
+    menu.style.color = "#00ff00";
+    about.style.color = "black";
+    home.style.color = "black";
+    contact.style.color = "black";
+
+  })
+    contact.addEventListener("click",()=>{
+    contact.style.color = "red";
+    about.style.color = "black";
+    menu.style.color = "black";
+    home.style.color = "black";
+
+  })
+
+</script>
 </body>
 </html>
